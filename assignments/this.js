@@ -21,9 +21,26 @@
 
 // code example for Window Binding
 
+function saySup() {
+    console.log(this);
+    return 'Sup!';
+}
+saySup();
+
 // Principle 2
 
 // code example for Implicit Binding
+
+const intro = {
+    greet: 'Hi everyone',
+    introSelf: function(name){
+        console.log(`${this.greet}, my name is ${name}`);
+        console.log(this);
+    }
+}
+
+intro.introSelf('Neha');
+
 
 // Principle 3
 

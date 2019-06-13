@@ -41,10 +41,24 @@ const intro = {
 
 intro.introSelf('Neha');
 
-
 // Principle 3
 
 // code example for New Binding
+
+function goTeamCheer(teamName){
+    this.chant = "GO";
+    this.teamName = teamName;
+    this.cheer = function() {
+        console.log(`${this.chant}, ${this.teamName}, ${this.chant}!`);
+        console.log(this);
+    }
+}
+
+const lakers = new goTeamCheer('Lakers');
+const liverpool = new goTeamCheer('Liverpool');
+
+lakers.cheer();
+liverpool.cheer();
 
 // Principle 4
 

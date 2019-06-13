@@ -45,7 +45,7 @@ intro.introSelf('Neha');
 
 // code example for New Binding
 
-function goTeamCheer(teamName){
+function GoTeamCheer(teamName){
     this.chant = "GO";
     this.teamName = teamName;
     this.cheer = function() {
@@ -54,8 +54,8 @@ function goTeamCheer(teamName){
     }
 }
 
-const lakers = new goTeamCheer('Lakers');
-const liverpool = new goTeamCheer('Liverpool');
+const lakers = new GoTeamCheer('Lakers');
+const liverpool = new GoTeamCheer('Liverpool');
 
 lakers.cheer();
 liverpool.cheer();
@@ -64,4 +64,4 @@ liverpool.cheer();
 
 // code example for Explicit Binding
 //  SEE EXAMPLE 3 FOR REFERENCE //
-liverpool.cheer.call(new goTeamCheer('Man City'));
+liverpool.cheer.call(new GoTeamCheer('Man City'));

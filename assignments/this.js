@@ -63,3 +63,5 @@ liverpool.cheer();
 // Principle 4
 
 // code example for Explicit Binding
+
+liverpool.cheer.call(new goTeamCheer('Man City'));
